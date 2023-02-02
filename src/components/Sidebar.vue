@@ -1,97 +1,74 @@
 <template>
   <div class="flex h-fit my-1 w-full flex-initial lg:w-1/4">
 
-    <div class="bg-gray-200 w-full"
-    >
+    <div class="bg-gray-200 w-full">
       <nav class="my-10">
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm font-semibold"
-          :class="[$route.name === 'termsofService' ? activeClass : inactiveClass]"
-          to="/termsofService"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm font-semibold"
+          :class="[$route.hash.replace('#', '') === 'TermsofService' ? activeClass : inactiveClass]"
+          to="/legal#TermsofService">
           <span class="mx-1">Terms of Service</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'userAgreement' ? activeClass : inactiveClass]"
-          to="/userAgreement"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'UserAgreement' ? activeClass : inactiveClass]"
+          to="/legal#UserAgreement">
           <span class="mx-1">User Agreement</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'communityTermsOfUse' ? activeClass : inactiveClass]"
-          to="/communityTermsOfUse"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'CommunityTermsOfUse' ? activeClass : inactiveClass]"
+          to="/legal#CommunityTermsOfUse">
           <span class="mx-1">Term of Use</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'feeAgreement' ? activeClass : inactiveClass]"
-          to="/feeAgreement"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'FeeAgreement' ? activeClass : inactiveClass]"
+          to="/legal#FeeAgreement">
           <span class="mx-1">Fee Agreement</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'fixedPriceContractEscrowAgreement' ? activeClass : inactiveClass]"
-          to="/fixedPriceContractEscrowAgreement"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'FixedPriceContractEscrowAgreement' ? activeClass : inactiveClass]"
+          to="/legal#FixedPriceContractEscrowAgreement">
           <span class="mx-1">Fixed Price Contract Escrow Agreement</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'optionalContractTerms' ? activeClass : inactiveClass]"
-          to="/optionalContractTerms"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'OptionalContractTerms' ? activeClass : inactiveClass]"
+          to="/legal#OptionalContractTerms">
           <span class="mx-1">Optional Contract Term</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'privacyCenter' ? activeClass : inactiveClass]"
-          to="/privacyCenter"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'PrivacyCenter' ? activeClass : inactiveClass]"
+          to="/legal#PrivacyCenter">
           <span class="mx-1">Privacy Center</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'privacyPolicyPDCS' ? activeClass : inactiveClass]"
-          to="/privacyPolicyPDCS"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'PrivacyPolicyPDCS' ? activeClass : inactiveClass]"
+          to="/legal#PrivacyPolicyPDCS">
           <span class="mx-1">Privacy Policy PDCS</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'cookiePolicy' ? activeClass : inactiveClass]"
-          to="/cookiePolicy"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'CookiePolicy' ? activeClass : inactiveClass]"
+          to="/legal#CookiePolicy">
           <span class="mx-1">Cookie Policy</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'digitalAccessibilityStatement' ? activeClass : inactiveClass]"
-          to="/digitalAccessibilityStatement"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'DigitalAccessibilityStatement' ? activeClass : inactiveClass]"
+          to="/legal#DigitalAccessibilityStatement">
           <span class="mx-1">Digital Accessibility Statement</span>
         </router-link>
 
-        <router-link
-          class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
-          :class="[$route.name === 'nonDiscriminationStatement' ? activeClass : inactiveClass]"
-          to="/nonDiscriminationStatement"
-        >
+        <router-link class="flex items-center px-2 py-2 mt-4 duration-200 border-l-4 text-sm"
+          :class="[$route.hash.replace('#', '') === 'NonDiscriminationStatement' ? activeClass : inactiveClass]"
+          to="/legal#NonDiscriminationStatement">
           <span class="mx-1">Nondiscrimination Statement</span>
         </router-link>
-        
+
       </nav>
     </div>
   </div>
